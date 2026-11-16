@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uppsala AI Safety</title>
+<link rel="preload" href="fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/source-serif-600.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url("fonts/inter-var.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Source Serif 4";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("fonts/source-serif-600.woff2") format("woff2");
+  }
+
+  :root {
+    --bg: #fbfaf7;
+    --text: #1f2328;
+    --accent: #2f5d8a;
+    --line: #e4e1da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a;
+      --text: #e8e6e1;
+      --accent: #8db7e3;
+      --line: #2c3036;
+    }
+  }
+
+  body {
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    max-width: 40rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 1.0625rem/1.65 "Inter", system-ui, sans-serif;
+  }
+
+  h1, h2 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600;
+    line-height: 1.15;
+  }
+  h1 { font-size: clamp(2.2rem, 6vw, 3rem); margin: 0 0 1rem; }
+  h2 { font-size: 1.5rem; margin-top: 2.5rem; }
+
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+
+  #upplagg ul { list-style: none; padding: 0; }
+  #upplagg li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Uppsala AI Safety</h1>
+<p>We are a group focused on enabling individuals to limit the threat posed by powerful AI systems.</p>
+<p>Do you think all of the following are true?</p>
+<ul>
+<li>AI is developing rapidly.</li>
+<li>Not enough is being done to oversee that rapid development.</li>
+<li>The threat from a strong AI system without proper guardrails is high.</li>
+</ul>
+<p><strong>Join us!</strong> We want to spark interest in AI oversight and control, and provide an environment that enables individuals to contribute to AI safety.</p>
+</header>
+<hr>
+
+<main>
+
+<section id="upplagg">
+<h2>Autumn Events</h2>
+<ul>
+<li>Thursday, 19 November, 17:30–19:00 <a href="https://luma.com/h8cn5ag2">Apply</a></li>
+</ul>
+</section>
+
+</main>
+
+</body>
+</html>
