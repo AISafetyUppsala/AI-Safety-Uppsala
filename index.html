@@ -67,6 +67,42 @@
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--line);
   }
+
+  #tidigare { margin-top: 2.5rem; }
+  #tidigare summary {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.15;
+    list-style: none;
+  }
+  #tidigare summary::-webkit-details-marker { display: none; }
+  #tidigare summary:hover { color: var(--accent); }
+  #tidigare summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+  #tidigare summary::after {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: -0.2rem;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.15s ease, margin 0.15s ease;
+  }
+  #tidigare[open] summary::after {
+    margin-top: 0.2rem;
+    transform: rotate(225deg);
+  }
+  #tidigare ul { margin-bottom: 0; }
+  #tidigare li { opacity: 0.75; }
 </style>
 </head>
 <body>
@@ -87,10 +123,17 @@
 <main>
 
 <section id="upplagg">
-<h2>Autumn Events</h2>
+<h2>Upcoming events</h2>
 <ul>
-<li>Thursday, 19 November, 17:30–19:00 <a href="https://luma.com/h8cn5ag2">Apply</a></li>
+<li>Thursday, 26 November, 17:30–19:00 <a href="https://luma.com/w5nk72e6">Apply</a></li>
 </ul>
+
+<details id="tidigare">
+<summary>Past events</summary>
+<ul>
+<li>Thursday, 19 November, 17:30–19:00 <a href="https://luma.com/h8cn5ag2">Details</a></li>
+</ul>
+</details>
 </section>
 
 </main>
